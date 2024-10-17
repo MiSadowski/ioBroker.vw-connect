@@ -3321,7 +3321,7 @@ class VwWeconnect extends utils.Adapter {
     return new Promise((resolve, reject) => {
       request.post(
         {
-          url: "https://ola.prod.code.seat.cloud.vwgroup.com/vehicles/" + vin + "/" + action + "/requests/" + state,
+          url: "https://ola.prod.code.seat.cloud.vwgroup.com/vehicles/v1/" + vin + "/" + action + "/requests/" + state,
           headers: {
             accept: "*/*",
             "user-agent": this.userAgent,
